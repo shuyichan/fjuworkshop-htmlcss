@@ -166,9 +166,20 @@
 				<section>
 					<section>
 						<h1>HTML 基礎</h1>
-						<p>1. Make the headline and inputs</p>
 					</section>
-
+		
+					<section>
+						<h2>HTML文本結構</h2>
+						<p></p>
+						
+						<img data-src="images/structure.jpg" alt="structure">
+						<ul>
+							<li>DOCTYPE版本宣告HTML5，因為HTML有多個不同版本</li>
+							<li>html標籤包住所有程式碼 在最外層</li>
+							<li>head裡面是 放網頁相關資訊，給搜尋引擎看</li>
+							<li>body裡面是 會顯示的網頁內容，給人看</li>
+						</ul>
+					</section>	
 					<section>
 						<h2>
 							標籤 (tags) 
@@ -177,8 +188,12 @@
 						<ul>
 							<li>標籤通常是成對的（開始與結束）</li>
 							<li>用來告訴網頁內容的用途與意義</li>
-							<li>//單獨標籤： br , hr , img</li>
+							<li>*單獨標籤： br , hr , img</li>
 						</ul>
+						<p>
+							// <a href="http://www.w3school.com.cn/tags/index.asp">到W3School學習所有標籤</a>
+						</p>
+						
 					</section>
 
 					<section>
@@ -190,59 +205,30 @@
 							<li>屬性：標籤中可以調整的選項</li>
 							<li>開始標記可以承載屬性，進一步說明標籤的內容</li>
 						</ul>
+						<p>
+							// <a href="http://www.w3school.com.cn/tags/tag_a.asp">到W3School學習所有標籤中的屬性</a>
+						</p>
 					</section>
 					<section>
 						<h2>
-							標籤
+							HTML5 語意化標籤 
 						</h2>
-						<a class="jsbin-embed" href="http://jsbin.com/tafalu/3/embed?html,output">HTML標籤展示</a><script src="http://static.jsbin.com/js/embed.js"></script>
-						<p>延伸： <a href="http://www.w3school.com.cn/tags/index.asp">html標籤學習總覽（w3school）</a></p>
-					</section>
-					<section>
-						<h2>標籤小重點</h2>
+						<p>//標籤：告訴網頁內容的用途與意義</p>
 						<ul>
-							<li>用對標籤 --了解HTML標籤有哪些，針對內容選用語意相符的標籤</li>
-							<li>有始有終 --開始標籤與結尾標籤</li>
-							<li>單獨標籤： br , hr , img </li>
+							<li> header : 一段文件、文章的標題</li>
+							<li> nav : 導航的意思 </li>
+							<li> aside : 主要內容之外的其他內容(側邊欄)</li>
+							<li> article : 為頁面中的一個區塊可多個，是獨立的內容 </li>
+							<li> section : 用於章節等段落的區分，必須有標題 </li>
+							<li> footer : HTML5頁面的下方，用以顯示相關資訊</li>
 						</ul>
-						<p class="fragment">//撰寫HTML，就是為了正確告訴瀏覽器我想要的效果</p>
-					</section>					
-					<section>
-						<h2>part1.html basic code</h2>
-						<pre><code>
-	<h1>Anna Dowlin</h1>
-	<p>Hi!I'm Anna Dowlin,a NYC-based marketer.Say hello!</p>
-	<input type="email" placeholder="your email">
-	<input type="submit">  
-
-						</code></pre>
 					</section>
-					<!-- 
-					<section>
-						<h2>1. DOCTYPE 版本宣告</h2>
-						<p>HTML有多個不同版本，只有完全明白頁面中使用的HTML版本，瀏覽器才能完全正確的顯示出HTML頁面這就是DOCTYPE的宣告用意。 </p>
-						<ul>
-							<li>HTML5:
-								<pre><code>
-!DOCTYPE html>
-								</code></pre>
-							</li>
-							<li>HTML4.01:
-								<pre><code>
-!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-            "http://www.w3.org/TR/html4/strict.dtd">
-								</code></pre>
-							</li>
-						</ul>
-					</section>	 -->					
-
 				</section>
 
 
 				<section>
 					<section>
 						<h1>CSS 基礎</h1>
-						<p>2. Style the background and text</p>
 					</section>
 					<section>
 						<h2>CSS三種穿衣法 </h2>
@@ -267,75 +253,6 @@
 								</code></pre>
 							</li>
 						</ul>
-					</section>
-					<section>
-						<h2>CSS 如何寫</h2>
-						<img data-src="images/property.jpg" alt="css解說">
-					</section>
-
-					<section>
-						<h2>CSS 排整齊</h2>
-						<img data-src="images/place.jpg" alt="css解說">
-					</section>
-					<section>
-						<h2>CSS 選擇器</h2>
-						<ul>
-							<li>標籤</li>
-							<li>屬性選擇器</li>
-						</ul>
-						<pre><code>
-	<style>
-		h1{...}
-		input[type="email"]{...}
-	</style>
-						</code></pre>							
-
-					</section>					
-					<section>
-						<h2>Class & ID 選擇器</h2>
-
-						<ul>
-							<li>Class選取器使用"."---可共用 </li>
-							<li>ID選取器使用"#" ---是唯一</li>
-						</ul>
-						<p>CSS</p>
-						<pre><code>
-	.classname{...}
-	#idname{...}
-						</code></pre>						
-						<p>HTML</p>
-						<pre><code>
-	<h1 class="classname">...</h1>
-	<p class="classname">...</p>
-	<p id="idname">...</p>
-						</code></pre>	
-						<p>//選擇器小遊戲: <a href="http://flukeout.github.io">CSS Diner</a></p>					
-					</section>
-
-					<section>
-						<h2>part2.css basic code</h2><p data-height="500" data-theme-id="7456" data-slug-hash="EarGeO" data-default-tab="result" data-user="shuyichan" class='codepen'>See the Pen <a href='http://codepen.io/shuyichan/pen/EarGeO/'>EarGeO</a> by shuyichan (<a href='http://codepen.io/shuyichan'>@shuyichan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
-					</section>
-
-				</section>
-
-				<section>
-					<section>
-						<h1>圖片與表單 樣式</h1>
-						<p>3. Add a background image and logo</p>
-					</section>
-					<section>
-						<h2>img 標籤</h2>
-
-						<pre><code>
-	<img src="/assets/anna.png" alt="寫圖片描述">
-						</code></pre>						
-						<ul>
-							<li>src 圖片路徑</li>
-							<li>alt 用來描述圖片</li>
-						</ul>
-						<p>// 注意：img 沒有結尾標籤</p>
-
 					</section>
 					<section>
 						<h2>檔案路徑</h2>
@@ -363,20 +280,82 @@
 						</ul>
 					</section>
 					<section>
-						<h2>背景 樣式</h2>
+						<h2>CSS 如何寫</h2>
+						<img data-src="images/property.jpg" alt="css解說">
+					</section>
+
+					<section>
+						<h2>CSS 排整齊</h2>
+						<img data-src="images/place.jpg" alt="css解說">
+					</section>
+					<section>
+						<h2>CSS 選擇器</h2>
+						<ul>
+							<li>標籤</li>
+							<li>屬性選擇器</li>
+						</ul>
 						<pre><code>
-      background: url("http://dash.ga.co/assets/anna-bg.png");
-      background-size: cover;
-      background-position: center;
-						</code></pre>
+	
+		h1 {...}
+		input[type="email"] {...}
+	
+						</code></pre>							
+
+					</section>					
+					<section>
+						<h2>Class & ID 選擇器</h2>
 
 						<ul>
-							<li>background 引入背景圖路徑</li>
-							<li>background-size 調整背景尺寸 <a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover" target="_blank">效果展示</a>	 </li>
-							<li>background-position 調整背景位置 </li>
-	
+							<li>Class選取器使用"."---可共用 </li>
+							<li>ID選取器使用"#" ---是唯一</li>
 						</ul>
-						<p class="fragment">// 去玩更多相關： background-attachment, background-clip, background-repeat </p>	
+						<p>CSS</p>
+						<pre><code>
+	.classname{...}
+	#idname{...}
+						</code></pre>						
+						<p>HTML</p>
+						<pre><code>
+	<h1 class="classname">...</h1>
+	<p class="classname">...</p>
+	<p id="idname">...</p>
+						</code></pre>	
+						<p>//選擇器小遊戲: <a href="http://flukeout.github.io">CSS Diner</a></p>					
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>實作前置</h1>
+					</section>
+					<section>
+						<h1>畫出想法</h1>
+						<img data-src="images/wireframe0.jpg" alt="wireframe">	
+					</section>
+					<section>
+						<h1>標示HTML架構</h1>
+						<img data-src="images/wireframe.jpg" alt="wireframe">	
+					</section>	
+					<section>
+						<h1>搭建HTML骨架</h1>
+						<p>開啟03try.html檔案</p>
+						<img data-src="images/practice-structure.png" alt="wireframe">
+					</section>	
+					<section>
+						<h1>穿上CSS</h1>
+						<p>開啟04complete.html檔案</p>
+						<img data-src="images/practice.png" height="400" alt="completeWebsite">	
+					</section>		
+					<section>
+						<h2>CSS Normalize</h2>
+						<ul>
+							<li>保留原本預設 HTML 標籤的樣式</li>
+							<li>針對不同瀏覽器與各版本間不相容的標籤進行些微調整，呈現一致</li>
+						</ul>
+					</section>
+				</section>
+				<section>				
+					<section>
+						<h1>CSS觀念實作練習</h1>
 					</section>
 					<section>
 						<h2>Box Model盒子模型</h2>
@@ -387,121 +366,7 @@
 							<li>與隔壁的距離 ＝ margin</li>
 						</ul>
 						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/box-model.html">關於 Box Model</a> </p>
-					</section>
-					<!-- <section>
-						<h2>Box Model 算一算</h2>
-						<table>
-							<thead>
-								<tr>
-									<th>內容width</th>
-									<th>padding</th>
-									<th>border</th>
-									<th>物件寬</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="fragment">70px</td>
-									<td>10px</td>
-									<td>5px</td>
-									<td> =  100px</td>
-								<tr>
-								<tr class="fragment">
-									<td colspan="4">70+10*2+5*2 = 100</td>
-								<tr>
-							</tbody>
-						</table>
-					</section> --><!-- 
-					<section>
-						<h2>不想算嗎？</h2>
-
-						<p>設定 box-sizing: border-box; <br>讓這個元素的內距和邊框將不會增加元素本身的寬度</p>
-						<table class="fragment">
-							<thead>
-								<tr>
-									<th>內容width</th>
-									<th>padding</th>
-									<th>border</th>
-									<th>物件寬</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>100px</td>
-									<td>10px</td>
-									<td>5px</td>
-									<td> =  100px</td>
-								<tr>
-							</tbody>
-						</table>
-					</section>	 -->				
-				</section>
-				<section>
-					<h2>PROJECT 2: <br>BUILD A RESPONSIVE BLOG THEME</h2>
-					<a href="https://dash.generalassemb.ly/shuyichan/build-your-own-blog-theme" target="_blank"><img data-src="images/jeff.png"width="1350" alt="jeffblog"></a>
-				</section>
-				<section>
-					<section>
-						<h1>網頁header與nav</h1>
-						<p>1. Make the header and navigation HTML</p>
-					</section>
-					<section>
-						<h2>
-							HTML5 語意化標籤 
-						</h2>
-						<p>//標籤：告訴網頁內容的用途與意義</p>
-						<ul>
-							<li> header : 一段文件、文章的標題</li>
-							<li> nav : 導航的意思 </li>
-							<li> aside : 主要內容之外的其他內容(側邊欄)</li>
-							<li> article : 為頁面中的一個區塊可多個，是獨立的內容 </li>
-							<li> section : 用於章節等段落的區分，必須有標題 </li>
-							<li> footer : HTML5頁面的下方，用以顯示相關資訊</li>
-						</ul>
-					</section>
-					<section>
-						<h2>
-							HTML 清單 
-						</h2>
-						<ul>
-							<li> 無序清單 : ul,li </li>
-							<li> 有序清單 : ol,li </li>
-						</ul>
-						<div data-height="266" data-theme-id="7456" data-slug-hash="raRLby" data-default-tab="html" data-user="shuyichan" class='codepen'><pre><code>無序清單
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Best Poems&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Worst Poems&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-有序清單
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;prepare&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;doing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;finish&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-<p>See the Pen <a href='http://codepen.io/shuyichan/pen/raRLby/'>raRLby</a> by shuyichan (<a href='http://codepen.io/shuyichan'>@shuyichan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h1>為header穿衣服</h1>
-						<p>2. Style the header with CSS</p>
-					</section>
-
-					<section><!-- 
-						<h2>CSS Reset </h2>
-						<ul>
-							<li>透過一組CSS設定，樣式統統歸零，排除不同瀏覽器間的預設值差異</li>
-							<li>常用的 ol, ul, li 等標籤，就必須特別再定義過才能正常運作</li>
-						</ul> -->
-						<h2>CSS Normalize</h2>
-						<ul>
-							<li>保留原本預設 HTML 標籤的樣式</li>
-							<li>針對不同瀏覽器與各版本間不相容的標籤進行些微調整，呈現一致</li>
-						</ul>
-					</section>
-
+					</section>	
 					<section>
 						<h2>display</h2>
 						<p>每個 HTML 元素都有一個預設的 display 值</p>
@@ -511,78 +376,30 @@
 							<li>inline-block：外面是 inline ，裡面是 block</li>
 							<li>none 隱藏不佔位</li>
 						</ul>
+
 					</section>
 					<section>
-						<h2>display 範例說明</h2>
-						<div data-height="266" data-theme-id="7456" data-slug-hash="bNZwbG" data-default-tab="html" data-user="shuyichan" class='codepen'><pre><code>&lt;ul class=&quot;links&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Best Poems&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Worst Poems&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-&lt;!-- 解說 --&gt;
-&lt;div class=&quot;aboutDisplay&quot;&gt;
-&lt;h2&gt;block：碰到元素就是會換行，而且block 元素的寬度預設會撐到最大&lt;/h2&gt;
-&lt;p&gt;都可以設定：margin 、 padding 、 width 、 height 、 background-image &lt;/p&gt;
-  
-&lt;h2&gt;inline:元素連在一起會在同一行，不會換行&lt;/h2&gt;
-&lt;p&gt;可以有 margin-left 、 margin-right 、 padding-left 、 padding-right ，但不能有 margin-top 、 margin-bottom 、 padding-top 、 padding-bottom 、 width 、 height 、 background-image&lt;/p&gt;
-  
-&lt;h2&gt;inline-block：外面是 inline ，裡面是 block&lt;/h2&gt;
-&lt;p&gt;碰到 display : inline-block 元素不會換行，但是又可以設定 padding-top 、 padding-bottom 、 width 、 height 、 background-image&lt;/p&gt;
-
-</code></pre>
-<p>See the Pen <a href='http://codepen.io/shuyichan/pen/bNZwbG/'>bNZwbG</a> by shuyichan (<a href='http://codepen.io/shuyichan'>@shuyichan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h1>響應式設計</h1>
-						<p>3. Add responsive design</p>
-					</section>
-
-					<section>
-						<h2>水平居中</h2>
+						<h2>float</h2>
 						<ul>
-							<li>									
-								<pre><code>
-#main {
-  width: 500px;
-  margin: 0 auto; 
-}
-								</code></pre></li>
-							<li>width設定，可以避免該元素從左到右撐滿容器</li>
-							<li>設定左右外邊距為 auto 來使其水平居中</li>
-							<li>// 視窗小於500px的話要讓區塊也跟著縮小，<br>要將width改成max-width</li>
+							<li>實作圖繞文效果</li>
+							<li>使用clear清除浮動</li>
+							<li>float排版</li>
 						</ul>
-						<!-- <p>//元素在顯示的時候，只會顯示到你所指定的寬度，然後剩餘的寬度平均的散落在左右兩邊的邊距上。</p> -->
-						<p>還有延伸： <a href="http://zh-tw.learnlayout.com/margin-auto.html" target="_blank">水平居中版面示意</a></p>	
+						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/float.html">關於 float 屬性</a> </p>
 					</section>
 					<section>
-						<h2>Media Queries</h2>
-						<p>@media 媒體類型 and (條件)</p>
+						<h2>position</h2>
 						<ul>
-							<li>視窗寬度500px以上：採用 CSS1設定							
-								<pre><code>
-@media screen and (min-width:500px) {CSS1設定}
-								</code></pre></li>
-							<li>視窗寬度在481~768px之間，採用 CSS2設定
-								<pre><code>
-@media screen and (min-width: 481px) and (max-width: 768px) {CSS2設定}
-								</code></pre>
-							</li>
+							<li>static</li>
+							<li>relative</li>
+							<li>fixed</li>
+							<li>absolute</li>
 						</ul>
-						<!-- <p>//元素在顯示的時候，只會顯示到你所指定的寬度，然後剩餘的寬度平均的散落在左右兩邊的邊距上。</p> -->
-						<p>還有延伸： <a href="https://hsinyu00.wordpress.com/2011/04/05/mobile-web-media-queries/" target="_blank">Media Queries 與 CSS</a>、<a href="https://blog.hinablue.me/entry/css-media-query-tips/">Media Query 小撇步</a></p>	
+						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/position.html">position</a> </p>
 					</section>
-				</section>								
-
+									
+				</section>						
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
